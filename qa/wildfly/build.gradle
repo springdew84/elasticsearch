@@ -74,7 +74,9 @@ dependencies {
 
 task unzipWildfly(type: Sync) {
     into wildflyDir
-    from { zipTree(configurations.wildfly.singleFile) }
+
+    //remove by cassey
+    //from { zipTree(configurations.wildfly.singleFile) }
 }
 
 task deploy(type: Copy) {

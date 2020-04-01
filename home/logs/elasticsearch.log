@@ -1,0 +1,901 @@
+[2020-04-01T10:19:47,273][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-04-01T10:19:47,881][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [355.2gb], net total_space [464.7gb], types [hfs]
+[2020-04-01T10:19:47,882][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] heap size [981.5mb], compressed ordinary object pointers [true]
+[2020-04-01T10:19:47,884][INFO ][o.e.n.Node               ] node name [UqRFBNr] derived from node ID [UqRFBNrSTdqC-Uf7HPzxZQ]; set [node.name] to override
+[2020-04-01T10:19:47,885][INFO ][o.e.n.Node               ] version[6.1.2-SNAPSHOT], pid[15203], build[Unknown/Unknown], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_172/25.172-b11]
+[2020-04-01T10:19:47,885][INFO ][o.e.n.Node               ] JVM arguments [-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:60029,suspend=y,server=n, -Des.path.home=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home, -Des.path.conf=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config, -Xms1g, -Xmx1g, -Djava.security.policy=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config/java.policy, -Dlog4j2.disable.jmx=true, -javaagent:/Users/dealmoon/Library/Caches/IntelliJIdea2018.1/groovyHotSwap/gragent.jar, -javaagent:/Users/dealmoon/Library/Caches/IntelliJIdea2018.1/captureAgent/debugger-agent.jar=file:/private/var/folders/tf/hk1dpl8j72x9fqv7l3pw9plh0000gn/T/capture2.props, -Dfile.encoding=UTF-8]
+[2020-04-01T10:19:47,885][WARN ][o.e.n.Node               ] version [6.1.2-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-04-01T10:19:50,456][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [aggs-matrix-stats]
+[2020-04-01T10:19:50,457][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [analysis-common]
+[2020-04-01T10:19:50,457][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [ingest-common]
+[2020-04-01T10:19:50,457][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-expression]
+[2020-04-01T10:19:50,457][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-mustache]
+[2020-04-01T10:19:50,457][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-painless]
+[2020-04-01T10:19:50,457][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [mapper-extras]
+[2020-04-01T10:19:50,457][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [parent-join]
+[2020-04-01T10:19:50,458][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [percolator]
+[2020-04-01T10:19:50,458][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [reindex]
+[2020-04-01T10:19:50,458][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [repository-url]
+[2020-04-01T10:19:50,458][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [transport-netty4]
+[2020-04-01T10:19:50,459][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [tribe]
+[2020-04-01T10:19:50,460][INFO ][o.e.p.PluginsService     ] [UqRFBNr] no plugins loaded
+[2020-04-01T10:19:51,104][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+[2020-04-01T10:20:05,978][INFO ][o.e.d.DiscoveryModule    ] [UqRFBNr] using discovery type [zen]
+[2020-04-01T10:20:07,309][INFO ][o.e.n.Node               ] initialized
+[2020-04-01T10:20:07,309][INFO ][o.e.n.Node               ] [UqRFBNr] starting ...
+[2020-04-01T10:20:07,694][INFO ][o.e.t.TransportService   ] [UqRFBNr] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2020-04-01T10:20:10,832][INFO ][o.e.c.s.MasterService    ] [UqRFBNr] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{RwHhws_eTbOHKGadraXniQ}{127.0.0.1}{127.0.0.1:9300}
+[2020-04-01T10:20:10,843][INFO ][o.e.c.s.ClusterApplierService] [UqRFBNr] new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{RwHhws_eTbOHKGadraXniQ}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{RwHhws_eTbOHKGadraXniQ}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2020-04-01T10:20:10,878][INFO ][o.e.h.n.Netty4HttpServerTransport] [UqRFBNr] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2020-04-01T10:20:10,879][INFO ][o.e.n.Node               ] [UqRFBNr] started
+[2020-04-01T10:20:10,890][INFO ][o.e.g.GatewayService     ] [UqRFBNr] recovered [0] indices into cluster_state
+[2020-04-01T10:21:07,947][INFO ][o.e.n.Node               ] [UqRFBNr] stopping ...
+[2020-04-01T10:21:17,970][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-04-01T10:21:18,316][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [353.2gb], net total_space [464.7gb], types [hfs]
+[2020-04-01T10:21:18,317][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] heap size [1gb], compressed ordinary object pointers [true]
+[2020-04-01T10:21:18,325][INFO ][o.e.n.Node               ] node name [UqRFBNr] derived from node ID [UqRFBNrSTdqC-Uf7HPzxZQ]; set [node.name] to override
+[2020-04-01T10:21:18,325][INFO ][o.e.n.Node               ] version[6.1.2-SNAPSHOT], pid[15233], build[Unknown/Unknown], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/14/14+36-1461]
+[2020-04-01T10:21:18,326][INFO ][o.e.n.Node               ] JVM arguments [-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:60111,suspend=y,server=n, -Des.path.home=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home, -Des.path.conf=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config, -Xms1g, -Xmx1g, -Djava.security.policy=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config/java.policy, -Dlog4j2.disable.jmx=true, -javaagent:/Users/dealmoon/Library/Caches/IntelliJIdea2018.1/groovyHotSwap/gragent.jar, -Dfile.encoding=UTF-8]
+[2020-04-01T10:21:18,327][WARN ][o.e.n.Node               ] version [6.1.2-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-04-01T10:21:20,645][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [aggs-matrix-stats]
+[2020-04-01T10:21:20,645][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [analysis-common]
+[2020-04-01T10:21:20,645][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [ingest-common]
+[2020-04-01T10:21:20,646][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-expression]
+[2020-04-01T10:21:20,646][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-mustache]
+[2020-04-01T10:21:20,646][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-painless]
+[2020-04-01T10:21:20,646][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [mapper-extras]
+[2020-04-01T10:21:20,647][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [parent-join]
+[2020-04-01T10:21:20,647][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [percolator]
+[2020-04-01T10:21:20,647][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [reindex]
+[2020-04-01T10:21:20,647][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [repository-url]
+[2020-04-01T10:21:20,647][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [transport-netty4]
+[2020-04-01T10:21:20,648][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [tribe]
+[2020-04-01T10:21:20,649][INFO ][o.e.p.PluginsService     ] [UqRFBNr] no plugins loaded
+[2020-04-01T10:21:21,163][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+[2020-04-01T10:21:25,610][INFO ][o.e.d.DiscoveryModule    ] [UqRFBNr] using discovery type [zen]
+[2020-04-01T10:21:26,269][ERROR][o.e.b.Bootstrap          ] Guice Exception: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at <<<guice>>>
+	at org.elasticsearch.repositories.RepositoriesModule.lambda$configure$1(RepositoriesModule.java:68)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1425)
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1521)
+	at org.elasticsearch.repositories.RepositoriesModule.configure(RepositoriesModule.java:68)
+	at <<<guice>>>
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:322)
+	<<<truncated>>>
+
+[2020-04-01T10:21:26,274][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: org.elasticsearch.common.inject.CreationException: Guice creation errors:
+
+1) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.addInjectorsForMembers(InjectionPoint.java:370)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.addInjectionPoints(InjectionPoint.java:359)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:302)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:323)
+	at org.elasticsearch.common.inject.internal.BindingBuilder.toInstance(BindingBuilder.java:90)
+	at org.elasticsearch.repositories.RepositoriesModule.lambda$configure$1(RepositoriesModule.java:68)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1425)
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1521)
+	at org.elasticsearch.repositories.RepositoriesModule.configure(RepositoriesModule.java:68)
+	at org.elasticsearch.common.inject.AbstractModule.configure(AbstractModule.java:60)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:90)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:322)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85)
+
+2) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:90)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:322)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85)
+
+3) No implementation for org.elasticsearch.repositories.Repository$Factory annotated with @org.elasticsearch.common.inject.multibindings.Element(setName=,uniqueId=1) was bound.
+  at _unknown_
+
+3 errors
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[main/:?]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[main/:?]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[main/:?]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) ~[main/:?]
+Caused by: org.elasticsearch.common.inject.CreationException: Guice creation errors:
+
+1) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.addInjectorsForMembers(InjectionPoint.java:370)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.addInjectionPoints(InjectionPoint.java:359)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:302)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:323)
+	at org.elasticsearch.common.inject.internal.BindingBuilder.toInstance(BindingBuilder.java:90)
+	at org.elasticsearch.repositories.RepositoriesModule.lambda$configure$1(RepositoriesModule.java:68)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1425)
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1521)
+	at org.elasticsearch.repositories.RepositoriesModule.configure(RepositoriesModule.java:68)
+	at org.elasticsearch.common.inject.AbstractModule.configure(AbstractModule.java:60)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:90)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:322)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85)
+
+2) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:90)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:322)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85)
+
+3) No implementation for org.elasticsearch.repositories.Repository$Factory annotated with @org.elasticsearch.common.inject.multibindings.Element(setName=,uniqueId=1) was bound.
+  at _unknown_
+
+3 errors
+	at org.elasticsearch.common.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:361) ~[main/:?]
+	at org.elasticsearch.common.inject.InjectorBuilder.initializeStatically(InjectorBuilder.java:137) ~[main/:?]
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:93) ~[main/:?]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96) ~[main/:?]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70) ~[main/:?]
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42) ~[main/:?]
+	at org.elasticsearch.node.Node.<init>(Node.java:499) ~[main/:?]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:322) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[main/:?]
+	... 6 more
+[2020-04-01T10:29:48,930][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-04-01T10:29:49,219][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [354.1gb], net total_space [464.7gb], types [hfs]
+[2020-04-01T10:29:49,220][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] heap size [1gb], compressed ordinary object pointers [true]
+[2020-04-01T10:29:49,225][INFO ][o.e.n.Node               ] node name [UqRFBNr] derived from node ID [UqRFBNrSTdqC-Uf7HPzxZQ]; set [node.name] to override
+[2020-04-01T10:29:49,225][INFO ][o.e.n.Node               ] version[6.1.2-SNAPSHOT], pid[15267], build[Unknown/Unknown], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/14/14+36-1461]
+[2020-04-01T10:29:49,226][INFO ][o.e.n.Node               ] JVM arguments [-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:60172,suspend=y,server=n, -Des.path.home=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home, -Des.path.conf=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config, -Xms1g, -Xmx1g, -Djava.security.policy=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config/java.policy, -Dlog4j2.disable.jmx=true, -javaagent:/Users/dealmoon/Library/Caches/IntelliJIdea2018.1/groovyHotSwap/gragent.jar, -Dfile.encoding=UTF-8]
+[2020-04-01T10:29:49,226][WARN ][o.e.n.Node               ] version [6.1.2-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-04-01T10:29:50,950][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [aggs-matrix-stats]
+[2020-04-01T10:29:50,950][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [analysis-common]
+[2020-04-01T10:29:50,951][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [ingest-common]
+[2020-04-01T10:29:50,951][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-expression]
+[2020-04-01T10:29:50,951][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-mustache]
+[2020-04-01T10:29:50,951][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-painless]
+[2020-04-01T10:29:50,952][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [mapper-extras]
+[2020-04-01T10:29:50,952][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [parent-join]
+[2020-04-01T10:29:50,952][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [percolator]
+[2020-04-01T10:29:50,952][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [reindex]
+[2020-04-01T10:29:50,952][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [repository-url]
+[2020-04-01T10:29:50,952][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [transport-netty4]
+[2020-04-01T10:29:50,952][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [tribe]
+[2020-04-01T10:29:50,956][INFO ][o.e.p.PluginsService     ] [UqRFBNr] no plugins loaded
+[2020-04-01T10:29:51,454][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+[2020-04-01T10:30:00,813][INFO ][o.e.d.DiscoveryModule    ] [UqRFBNr] using discovery type [zen]
+[2020-04-01T10:30:01,526][ERROR][o.e.b.Bootstrap          ] Guice Exception: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at <<<guice>>>
+	at org.elasticsearch.repositories.RepositoriesModule.lambda$configure$1(RepositoriesModule.java:68)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1425)
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1521)
+	at org.elasticsearch.repositories.RepositoriesModule.configure(RepositoriesModule.java:68)
+	at <<<guice>>>
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:322)
+	<<<truncated>>>
+
+[2020-04-01T10:30:01,531][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: org.elasticsearch.common.inject.CreationException: Guice creation errors:
+
+1) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.addInjectorsForMembers(InjectionPoint.java:370)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.addInjectionPoints(InjectionPoint.java:359)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:302)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:323)
+	at org.elasticsearch.common.inject.internal.BindingBuilder.toInstance(BindingBuilder.java:90)
+	at org.elasticsearch.repositories.RepositoriesModule.lambda$configure$1(RepositoriesModule.java:68)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1425)
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1521)
+	at org.elasticsearch.repositories.RepositoriesModule.configure(RepositoriesModule.java:68)
+	at org.elasticsearch.common.inject.AbstractModule.configure(AbstractModule.java:60)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:90)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:322)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85)
+
+2) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:90)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:322)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85)
+
+3) No implementation for org.elasticsearch.repositories.Repository$Factory annotated with @org.elasticsearch.common.inject.multibindings.Element(setName=,uniqueId=1) was bound.
+  at _unknown_
+
+3 errors
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[main/:?]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[main/:?]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[main/:?]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) ~[main/:?]
+Caused by: org.elasticsearch.common.inject.CreationException: Guice creation errors:
+
+1) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.addInjectorsForMembers(InjectionPoint.java:370)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.addInjectionPoints(InjectionPoint.java:359)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:302)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:323)
+	at org.elasticsearch.common.inject.internal.BindingBuilder.toInstance(BindingBuilder.java:90)
+	at org.elasticsearch.repositories.RepositoriesModule.lambda$configure$1(RepositoriesModule.java:68)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1425)
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1521)
+	at org.elasticsearch.repositories.RepositoriesModule.configure(RepositoriesModule.java:68)
+	at org.elasticsearch.common.inject.AbstractModule.configure(AbstractModule.java:60)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:90)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:322)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85)
+
+2) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:90)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:322)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85)
+
+3) No implementation for org.elasticsearch.repositories.Repository$Factory annotated with @org.elasticsearch.common.inject.multibindings.Element(setName=,uniqueId=1) was bound.
+  at _unknown_
+
+3 errors
+	at org.elasticsearch.common.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:361) ~[main/:?]
+	at org.elasticsearch.common.inject.InjectorBuilder.initializeStatically(InjectorBuilder.java:137) ~[main/:?]
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:93) ~[main/:?]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96) ~[main/:?]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70) ~[main/:?]
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42) ~[main/:?]
+	at org.elasticsearch.node.Node.<init>(Node.java:499) ~[main/:?]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:322) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[main/:?]
+	... 6 more
+[2020-04-01T10:32:35,681][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-04-01T10:32:36,045][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [354.1gb], net total_space [464.7gb], types [hfs]
+[2020-04-01T10:32:36,047][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] heap size [1gb], compressed ordinary object pointers [true]
+[2020-04-01T10:32:36,053][INFO ][o.e.n.Node               ] node name [UqRFBNr] derived from node ID [UqRFBNrSTdqC-Uf7HPzxZQ]; set [node.name] to override
+[2020-04-01T10:32:36,054][INFO ][o.e.n.Node               ] version[6.1.2-SNAPSHOT], pid[15285], build[Unknown/Unknown], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/14/14+36-1461]
+[2020-04-01T10:32:36,055][INFO ][o.e.n.Node               ] JVM arguments [-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:60190,suspend=y,server=n, -Des.path.home=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home, -Des.path.conf=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config, -Xms1g, -Xmx1g, -Djava.security.policy=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config/java.policy, -Dlog4j2.disable.jmx=true, -javaagent:/Users/dealmoon/Library/Caches/IntelliJIdea2018.1/groovyHotSwap/gragent.jar, -Dfile.encoding=UTF-8]
+[2020-04-01T10:32:36,055][WARN ][o.e.n.Node               ] version [6.1.2-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-04-01T10:32:37,921][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [aggs-matrix-stats]
+[2020-04-01T10:32:37,922][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [analysis-common]
+[2020-04-01T10:32:37,922][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [ingest-common]
+[2020-04-01T10:32:37,923][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-expression]
+[2020-04-01T10:32:37,923][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-mustache]
+[2020-04-01T10:32:37,923][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-painless]
+[2020-04-01T10:32:37,924][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [mapper-extras]
+[2020-04-01T10:32:37,925][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [parent-join]
+[2020-04-01T10:32:37,926][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [percolator]
+[2020-04-01T10:32:37,927][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [reindex]
+[2020-04-01T10:32:37,927][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [repository-url]
+[2020-04-01T10:32:37,927][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [transport-netty4]
+[2020-04-01T10:32:37,927][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [tribe]
+[2020-04-01T10:32:37,928][INFO ][o.e.p.PluginsService     ] [UqRFBNr] no plugins loaded
+[2020-04-01T10:32:38,342][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+[2020-04-01T10:32:42,212][INFO ][o.e.d.DiscoveryModule    ] [UqRFBNr] using discovery type [zen]
+[2020-04-01T10:32:44,360][INFO ][o.e.n.Node               ] initialized
+[2020-04-01T10:32:44,361][INFO ][o.e.n.Node               ] [UqRFBNr] starting ...
+[2020-04-01T10:32:44,716][INFO ][o.e.t.TransportService   ] [UqRFBNr] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2020-04-01T10:32:47,817][INFO ][o.e.c.s.MasterService    ] [UqRFBNr] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{OZr4GcQNQbWrCWZAxd3MZQ}{127.0.0.1}{127.0.0.1:9300}
+[2020-04-01T10:32:47,825][INFO ][o.e.c.s.ClusterApplierService] [UqRFBNr] new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{OZr4GcQNQbWrCWZAxd3MZQ}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{OZr4GcQNQbWrCWZAxd3MZQ}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2020-04-01T10:32:47,856][INFO ][o.e.h.n.Netty4HttpServerTransport] [UqRFBNr] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2020-04-01T10:32:47,856][INFO ][o.e.n.Node               ] [UqRFBNr] started
+[2020-04-01T10:32:47,893][INFO ][o.e.g.GatewayService     ] [UqRFBNr] recovered [0] indices into cluster_state
+[2020-04-01T10:33:31,253][INFO ][o.e.n.Node               ] [UqRFBNr] stopping ...
+[2020-04-01T10:47:22,426][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-04-01T10:47:22,909][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [353.1gb], net total_space [464.7gb], types [hfs]
+[2020-04-01T10:47:22,910][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] heap size [1gb], compressed ordinary object pointers [true]
+[2020-04-01T10:47:22,930][INFO ][o.e.n.Node               ] node name [UqRFBNr] derived from node ID [UqRFBNrSTdqC-Uf7HPzxZQ]; set [node.name] to override
+[2020-04-01T10:47:22,930][INFO ][o.e.n.Node               ] version[6.1.2-SNAPSHOT], pid[15327], build[Unknown/Unknown], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/14/14+36-1461]
+[2020-04-01T10:47:22,931][INFO ][o.e.n.Node               ] JVM arguments [-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:60440,suspend=y,server=n, -Des.path.home=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home, -Des.path.conf=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config, -Xms1g, -Xmx1g, -Djava.security.policy=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config/java.policy, -Dlog4j2.disable.jmx=true, -javaagent:/Users/dealmoon/Library/Caches/IntelliJIdea2018.1/groovyHotSwap/gragent.jar, -Dfile.encoding=UTF-8]
+[2020-04-01T10:47:22,932][WARN ][o.e.n.Node               ] version [6.1.2-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-04-01T10:47:25,352][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [aggs-matrix-stats]
+[2020-04-01T10:47:25,353][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [analysis-common]
+[2020-04-01T10:47:25,353][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [ingest-common]
+[2020-04-01T10:47:25,353][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-expression]
+[2020-04-01T10:47:25,353][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-mustache]
+[2020-04-01T10:47:25,353][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-painless]
+[2020-04-01T10:47:25,354][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [mapper-extras]
+[2020-04-01T10:47:25,354][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [parent-join]
+[2020-04-01T10:47:25,354][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [percolator]
+[2020-04-01T10:47:25,354][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [reindex]
+[2020-04-01T10:47:25,354][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [repository-url]
+[2020-04-01T10:47:25,354][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [transport-netty4]
+[2020-04-01T10:47:25,355][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [tribe]
+[2020-04-01T10:47:25,356][INFO ][o.e.p.PluginsService     ] [UqRFBNr] no plugins loaded
+[2020-04-01T10:47:25,822][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+[2020-04-01T10:47:29,280][INFO ][o.e.d.DiscoveryModule    ] [UqRFBNr] using discovery type [zen]
+[2020-04-01T10:47:30,316][INFO ][o.e.n.Node               ] initialized
+[2020-04-01T10:47:30,317][INFO ][o.e.n.Node               ] [UqRFBNr] starting ...
+[2020-04-01T10:47:30,598][INFO ][o.e.t.TransportService   ] [UqRFBNr] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2020-04-01T10:47:33,705][INFO ][o.e.c.s.MasterService    ] [UqRFBNr] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{88bmRMJOQw-HTkn_l3pMxg}{127.0.0.1}{127.0.0.1:9300}
+[2020-04-01T10:47:33,714][INFO ][o.e.c.s.ClusterApplierService] [UqRFBNr] new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{88bmRMJOQw-HTkn_l3pMxg}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{88bmRMJOQw-HTkn_l3pMxg}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2020-04-01T10:47:33,748][INFO ][o.e.h.n.Netty4HttpServerTransport] [UqRFBNr] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2020-04-01T10:47:33,748][INFO ][o.e.n.Node               ] [UqRFBNr] started
+[2020-04-01T10:47:33,782][INFO ][o.e.g.GatewayService     ] [UqRFBNr] recovered [0] indices into cluster_state
+[2020-04-01T10:57:09,774][INFO ][o.e.n.Node               ] [UqRFBNr] stopping ...
+[2020-04-01T10:57:21,081][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-04-01T10:57:21,093][INFO ][o.e.n.Node               ] [] Here is stack of Node instance
+************************************************************
+java.lang.Thread.getStackTrace() 1,598 <- 
+org.elasticsearch.node.Node.printTrack() 958 <- 
+org.elasticsearch.node.Node.<init>() 255 <- 
+org.elasticsearch.node.Node.<init>() 245 <- 
+org.elasticsearch.bootstrap.Bootstrap$5.<init>() 212 <- 
+org.elasticsearch.bootstrap.Bootstrap.setup() 212 <- 
+org.elasticsearch.bootstrap.Bootstrap.init() 322 <- 
+org.elasticsearch.bootstrap.Elasticsearch.init() 121 <- 
+org.elasticsearch.bootstrap.Elasticsearch.execute() 112 <- 
+org.elasticsearch.cli.EnvironmentAwareCommand.execute() 86 <- 
+org.elasticsearch.cli.Command.mainWithoutErrorHandling() 124 <- 
+org.elasticsearch.cli.Command.main() 90 <- 
+org.elasticsearch.bootstrap.Elasticsearch.main() 92 <- 
+org.elasticsearch.bootstrap.Elasticsearch.main() 85
+************************************************************
+[2020-04-01T10:57:21,315][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [354.1gb], net total_space [464.7gb], types [hfs]
+[2020-04-01T10:57:21,316][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] heap size [1gb], compressed ordinary object pointers [true]
+[2020-04-01T10:57:21,319][INFO ][o.e.n.Node               ] node name [UqRFBNr] derived from node ID [UqRFBNrSTdqC-Uf7HPzxZQ]; set [node.name] to override
+[2020-04-01T10:57:21,320][INFO ][o.e.n.Node               ] version[6.1.2-SNAPSHOT], pid[15353], build[Unknown/Unknown], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/14/14+36-1461]
+[2020-04-01T10:57:21,320][INFO ][o.e.n.Node               ] JVM arguments [-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:60548,suspend=y,server=n, -Des.path.home=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home, -Des.path.conf=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config, -Xms1g, -Xmx1g, -Djava.security.policy=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config/java.policy, -Dlog4j2.disable.jmx=true, -javaagent:/Users/dealmoon/Library/Caches/IntelliJIdea2018.1/groovyHotSwap/gragent.jar, -Dfile.encoding=UTF-8]
+[2020-04-01T10:57:21,321][WARN ][o.e.n.Node               ] version [6.1.2-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-04-01T10:57:23,127][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [aggs-matrix-stats]
+[2020-04-01T10:57:23,127][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [analysis-common]
+[2020-04-01T10:57:23,128][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [ingest-common]
+[2020-04-01T10:57:23,128][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-expression]
+[2020-04-01T10:57:23,128][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-mustache]
+[2020-04-01T10:57:23,128][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-painless]
+[2020-04-01T10:57:23,128][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [mapper-extras]
+[2020-04-01T10:57:23,129][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [parent-join]
+[2020-04-01T10:57:23,129][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [percolator]
+[2020-04-01T10:57:23,129][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [reindex]
+[2020-04-01T10:57:23,129][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [repository-url]
+[2020-04-01T10:57:23,129][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [transport-netty4]
+[2020-04-01T10:57:23,131][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [tribe]
+[2020-04-01T10:57:23,132][INFO ][o.e.p.PluginsService     ] [UqRFBNr] no plugins loaded
+[2020-04-01T10:57:23,542][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+[2020-04-01T10:57:28,567][INFO ][o.e.d.DiscoveryModule    ] [UqRFBNr] using discovery type [zen]
+[2020-04-01T10:57:29,545][INFO ][o.e.n.Node               ] initialized
+[2020-04-01T10:57:29,546][INFO ][o.e.n.Node               ] [UqRFBNr] starting ...
+[2020-04-01T10:57:29,838][INFO ][o.e.t.TransportService   ] [UqRFBNr] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2020-04-01T10:57:32,937][INFO ][o.e.c.s.MasterService    ] [UqRFBNr] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{J6jN_2MiQsOTceG6rbEZaQ}{127.0.0.1}{127.0.0.1:9300}
+[2020-04-01T10:57:32,946][INFO ][o.e.c.s.ClusterApplierService] [UqRFBNr] new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{J6jN_2MiQsOTceG6rbEZaQ}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{J6jN_2MiQsOTceG6rbEZaQ}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2020-04-01T10:57:32,973][INFO ][o.e.h.n.Netty4HttpServerTransport] [UqRFBNr] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2020-04-01T10:57:32,973][INFO ][o.e.n.Node               ] [UqRFBNr] started
+[2020-04-01T10:57:33,006][INFO ][o.e.g.GatewayService     ] [UqRFBNr] recovered [0] indices into cluster_state
+[2020-04-01T11:05:16,281][INFO ][o.e.n.Node               ] [UqRFBNr] stopping ...
+[2020-04-01T11:05:32,018][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-04-01T11:05:32,033][INFO ][o.e.n.Node               ] [] Here is stack of Node instance
+************************************************************
+java.lang.Thread.getStackTrace() 1,598 <- 
+log.MyLogger.printTrack() 46 <- 
+org.elasticsearch.node.Node.<init>() 256 <- 
+org.elasticsearch.node.Node.<init>() 246 <- 
+org.elasticsearch.bootstrap.Bootstrap$5.<init>() 212 <- 
+org.elasticsearch.bootstrap.Bootstrap.setup() 212 <- 
+org.elasticsearch.bootstrap.Bootstrap.init() 322 <- 
+org.elasticsearch.bootstrap.Elasticsearch.init() 121 <- 
+org.elasticsearch.bootstrap.Elasticsearch.execute() 112 <- 
+org.elasticsearch.cli.EnvironmentAwareCommand.execute() 86 <- 
+org.elasticsearch.cli.Command.mainWithoutErrorHandling() 124 <- 
+org.elasticsearch.cli.Command.main() 90 <- 
+org.elasticsearch.bootstrap.Elasticsearch.main() 92 <- 
+org.elasticsearch.bootstrap.Elasticsearch.main() 85
+************************************************************
+[2020-04-01T11:05:32,265][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [354.1gb], net total_space [464.7gb], types [hfs]
+[2020-04-01T11:05:32,266][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] heap size [1gb], compressed ordinary object pointers [true]
+[2020-04-01T11:05:32,269][INFO ][o.e.n.Node               ] node name [UqRFBNr] derived from node ID [UqRFBNrSTdqC-Uf7HPzxZQ]; set [node.name] to override
+[2020-04-01T11:05:32,270][INFO ][o.e.n.Node               ] version[6.1.2-SNAPSHOT], pid[15389], build[Unknown/Unknown], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/14/14+36-1461]
+[2020-04-01T11:05:32,271][INFO ][o.e.n.Node               ] JVM arguments [-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:60589,suspend=y,server=n, -Des.path.home=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home, -Des.path.conf=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config, -Xms1g, -Xmx1g, -Djava.security.policy=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config/java.policy, -Dlog4j2.disable.jmx=true, -javaagent:/Users/dealmoon/Library/Caches/IntelliJIdea2018.1/groovyHotSwap/gragent.jar, -Dfile.encoding=UTF-8]
+[2020-04-01T11:05:32,271][WARN ][o.e.n.Node               ] version [6.1.2-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-04-01T11:05:34,461][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [aggs-matrix-stats]
+[2020-04-01T11:05:34,461][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [analysis-common]
+[2020-04-01T11:05:34,463][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [ingest-common]
+[2020-04-01T11:05:34,464][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-expression]
+[2020-04-01T11:05:34,464][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-mustache]
+[2020-04-01T11:05:34,465][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-painless]
+[2020-04-01T11:05:34,465][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [mapper-extras]
+[2020-04-01T11:05:34,466][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [parent-join]
+[2020-04-01T11:05:34,466][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [percolator]
+[2020-04-01T11:05:34,467][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [reindex]
+[2020-04-01T11:05:34,467][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [repository-url]
+[2020-04-01T11:05:34,467][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [transport-netty4]
+[2020-04-01T11:05:34,467][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [tribe]
+[2020-04-01T11:05:34,468][INFO ][o.e.p.PluginsService     ] [UqRFBNr] no plugins loaded
+[2020-04-01T11:05:34,942][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+[2020-04-01T11:05:38,826][INFO ][o.e.d.DiscoveryModule    ] [UqRFBNr] using discovery type [zen]
+[2020-04-01T11:05:39,799][INFO ][o.e.n.Node               ] initialized
+[2020-04-01T11:05:39,800][INFO ][o.e.n.Node               ] [UqRFBNr] starting ...
+[2020-04-01T11:05:40,082][INFO ][o.e.t.TransportService   ] [UqRFBNr] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2020-04-01T11:05:43,191][INFO ][o.e.c.s.MasterService    ] [UqRFBNr] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{KP6GjYzbR1mSORl1FtgfUA}{127.0.0.1}{127.0.0.1:9300}
+[2020-04-01T11:05:43,200][INFO ][o.e.c.s.ClusterApplierService] [UqRFBNr] new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{KP6GjYzbR1mSORl1FtgfUA}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{KP6GjYzbR1mSORl1FtgfUA}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2020-04-01T11:05:43,233][INFO ][o.e.h.n.Netty4HttpServerTransport] [UqRFBNr] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2020-04-01T11:05:43,233][INFO ][o.e.n.Node               ] [UqRFBNr] started
+[2020-04-01T11:05:43,266][INFO ][o.e.g.GatewayService     ] [UqRFBNr] recovered [0] indices into cluster_state
+[2020-04-01T11:07:47,970][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-04-01T11:07:47,980][INFO ][o.e.n.Node               ] [] Here is stack of Node instance
+************************************************************
+java.lang.Thread.getStackTrace() 1,598
+log.MyLogger.printTrack() 46
+org.elasticsearch.node.Node.<init>() 256
+org.elasticsearch.node.Node.<init>() 246
+org.elasticsearch.bootstrap.Bootstrap$5.<init>() 212
+org.elasticsearch.bootstrap.Bootstrap.setup() 212
+org.elasticsearch.bootstrap.Bootstrap.init() 322
+org.elasticsearch.bootstrap.Elasticsearch.init() 121
+org.elasticsearch.bootstrap.Elasticsearch.execute() 112
+org.elasticsearch.cli.EnvironmentAwareCommand.execute() 86
+org.elasticsearch.cli.Command.mainWithoutErrorHandling() 124
+org.elasticsearch.cli.Command.main() 90
+org.elasticsearch.bootstrap.Elasticsearch.main() 92
+org.elasticsearch.bootstrap.Elasticsearch.main() 85
+************************************************************
+[2020-04-01T11:07:48,182][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [354.1gb], net total_space [464.7gb], types [hfs]
+[2020-04-01T11:07:48,183][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] heap size [1gb], compressed ordinary object pointers [true]
+[2020-04-01T11:07:48,189][INFO ][o.e.n.Node               ] node name [UqRFBNr] derived from node ID [UqRFBNrSTdqC-Uf7HPzxZQ]; set [node.name] to override
+[2020-04-01T11:07:48,191][INFO ][o.e.n.Node               ] version[6.1.2-SNAPSHOT], pid[15434], build[Unknown/Unknown], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/14/14+36-1461]
+[2020-04-01T11:07:48,192][INFO ][o.e.n.Node               ] JVM arguments [-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:60624,suspend=y,server=n, -Des.path.home=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home, -Des.path.conf=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config, -Xms1g, -Xmx1g, -Djava.security.policy=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config/java.policy, -Dlog4j2.disable.jmx=true, -javaagent:/Users/dealmoon/Library/Caches/IntelliJIdea2018.1/groovyHotSwap/gragent.jar, -Dfile.encoding=UTF-8]
+[2020-04-01T11:07:48,193][WARN ][o.e.n.Node               ] version [6.1.2-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-04-01T11:07:50,178][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [aggs-matrix-stats]
+[2020-04-01T11:07:50,179][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [analysis-common]
+[2020-04-01T11:07:50,179][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [ingest-common]
+[2020-04-01T11:07:50,179][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-expression]
+[2020-04-01T11:07:50,180][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-mustache]
+[2020-04-01T11:07:50,180][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-painless]
+[2020-04-01T11:07:50,180][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [mapper-extras]
+[2020-04-01T11:07:50,180][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [parent-join]
+[2020-04-01T11:07:50,180][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [percolator]
+[2020-04-01T11:07:50,180][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [reindex]
+[2020-04-01T11:07:50,180][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [repository-url]
+[2020-04-01T11:07:50,181][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [transport-netty4]
+[2020-04-01T11:07:50,181][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [tribe]
+[2020-04-01T11:07:50,182][INFO ][o.e.p.PluginsService     ] [UqRFBNr] no plugins loaded
+[2020-04-01T11:07:50,693][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+[2020-04-01T11:07:56,359][INFO ][o.e.d.DiscoveryModule    ] [UqRFBNr] using discovery type [zen]
+[2020-04-01T11:07:58,000][INFO ][o.e.n.Node               ] initialized
+[2020-04-01T11:07:58,000][INFO ][o.e.n.Node               ] [UqRFBNr] starting ...
+[2020-04-01T11:07:58,337][INFO ][o.e.t.TransportService   ] [UqRFBNr] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2020-04-01T11:08:01,472][INFO ][o.e.c.s.MasterService    ] [UqRFBNr] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{UmsO5nXNQFySmg12hcxChw}{127.0.0.1}{127.0.0.1:9300}
+[2020-04-01T11:08:01,491][INFO ][o.e.c.s.ClusterApplierService] [UqRFBNr] new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{UmsO5nXNQFySmg12hcxChw}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{UmsO5nXNQFySmg12hcxChw}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2020-04-01T11:08:01,552][INFO ][o.e.h.n.Netty4HttpServerTransport] [UqRFBNr] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2020-04-01T11:08:01,553][INFO ][o.e.n.Node               ] [UqRFBNr] started
+[2020-04-01T11:08:01,588][INFO ][o.e.g.GatewayService     ] [UqRFBNr] recovered [0] indices into cluster_state
+[2020-04-01T11:26:23,711][INFO ][o.e.m.j.JvmGcMonitorService] [UqRFBNr] [gc][1101] overhead, spent [364ms] collecting in the last [1s]
+[2020-04-01T11:47:18,730][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-04-01T11:47:18,740][INFO ][o.e.n.Node               ] [] [org.elasticsearch.bootstrap.Bootstrap$5] Here is stack of Node instance
+************************************************************
+org.elasticsearch.node.Node.<init>() line:256
+org.elasticsearch.node.Node.<init>() line:246
+org.elasticsearch.bootstrap.Bootstrap$5.<init>() line:212
+org.elasticsearch.bootstrap.Bootstrap.setup() line:212
+org.elasticsearch.bootstrap.Bootstrap.init() line:322
+org.elasticsearch.bootstrap.Elasticsearch.init() line:121
+org.elasticsearch.bootstrap.Elasticsearch.execute() line:112
+org.elasticsearch.cli.EnvironmentAwareCommand.execute() line:86
+org.elasticsearch.cli.Command.mainWithoutErrorHandling() line:124
+org.elasticsearch.cli.Command.main() line:90
+org.elasticsearch.bootstrap.Elasticsearch.main() line:92
+org.elasticsearch.bootstrap.Elasticsearch.main() line:85
+************************************************************
+[2020-04-01T11:47:18,997][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [354.1gb], net total_space [464.7gb], types [hfs]
+[2020-04-01T11:47:18,998][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] heap size [1gb], compressed ordinary object pointers [true]
+[2020-04-01T11:47:19,001][INFO ][o.e.n.Node               ] node name [UqRFBNr] derived from node ID [UqRFBNrSTdqC-Uf7HPzxZQ]; set [node.name] to override
+[2020-04-01T11:47:19,001][INFO ][o.e.n.Node               ] version[6.1.2-SNAPSHOT], pid[15580], build[Unknown/Unknown], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/14/14+36-1461]
+[2020-04-01T11:47:19,002][INFO ][o.e.n.Node               ] JVM arguments [-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:60835,suspend=y,server=n, -Des.path.home=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home, -Des.path.conf=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config, -Xms1g, -Xmx1g, -Djava.security.policy=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config/java.policy, -Dlog4j2.disable.jmx=true, -javaagent:/Users/dealmoon/Library/Caches/IntelliJIdea2018.1/groovyHotSwap/gragent.jar, -Dfile.encoding=UTF-8]
+[2020-04-01T11:47:19,002][WARN ][o.e.n.Node               ] version [6.1.2-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-04-01T11:47:20,920][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [aggs-matrix-stats]
+[2020-04-01T11:47:20,920][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [analysis-common]
+[2020-04-01T11:47:20,920][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [ingest-common]
+[2020-04-01T11:47:20,920][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-expression]
+[2020-04-01T11:47:20,921][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-mustache]
+[2020-04-01T11:47:20,921][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-painless]
+[2020-04-01T11:47:20,921][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [mapper-extras]
+[2020-04-01T11:47:20,921][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [parent-join]
+[2020-04-01T11:47:20,921][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [percolator]
+[2020-04-01T11:47:20,922][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [reindex]
+[2020-04-01T11:47:20,922][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [repository-url]
+[2020-04-01T11:47:20,922][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [transport-netty4]
+[2020-04-01T11:47:20,922][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [tribe]
+[2020-04-01T11:47:20,923][INFO ][o.e.p.PluginsService     ] [UqRFBNr] no plugins loaded
+[2020-04-01T11:47:21,531][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+[2020-04-01T11:47:25,013][INFO ][o.e.d.DiscoveryModule    ] [UqRFBNr] using discovery type [zen]
+[2020-04-01T11:47:25,979][INFO ][o.e.n.Node               ] initialized
+[2020-04-01T11:47:25,979][INFO ][o.e.n.Node               ] [UqRFBNr] starting ...
+[2020-04-01T11:47:26,212][INFO ][o.e.t.TransportService   ] [UqRFBNr] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2020-04-01T11:47:29,310][INFO ][o.e.c.s.MasterService    ] [UqRFBNr] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{Sn2XnCVTTmKey3Dpv4ubjg}{127.0.0.1}{127.0.0.1:9300}
+[2020-04-01T11:47:29,319][INFO ][o.e.c.s.ClusterApplierService] [UqRFBNr] new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{Sn2XnCVTTmKey3Dpv4ubjg}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{Sn2XnCVTTmKey3Dpv4ubjg}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2020-04-01T11:47:29,350][INFO ][o.e.h.n.Netty4HttpServerTransport] [UqRFBNr] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2020-04-01T11:47:29,351][INFO ][o.e.n.Node               ] [UqRFBNr] started
+[2020-04-01T11:47:29,382][INFO ][o.e.g.GatewayService     ] [UqRFBNr] recovered [0] indices into cluster_state
+[2020-04-01T11:57:06,764][INFO ][o.e.n.Node               ] [UqRFBNr] stopping ...
+[2020-04-01T11:57:18,415][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-04-01T11:57:18,422][INFO ][o.e.n.Node               ] [] [org.elasticsearch.bootstrap.Bootstrap$5] Here is stack of Node instance
+************************************************************
+org.elasticsearch.node.Node.<init>() line:256
+org.elasticsearch.node.Node.<init>() line:246
+org.elasticsearch.bootstrap.Bootstrap$5.<init>() line:212
+org.elasticsearch.bootstrap.Bootstrap.setup() line:212
+org.elasticsearch.bootstrap.Bootstrap.init() line:322
+org.elasticsearch.bootstrap.Elasticsearch.init() line:121
+org.elasticsearch.bootstrap.Elasticsearch.execute() line:112
+org.elasticsearch.cli.EnvironmentAwareCommand.execute() line:86
+org.elasticsearch.cli.Command.mainWithoutErrorHandling() line:124
+org.elasticsearch.cli.Command.main() line:90
+org.elasticsearch.bootstrap.Elasticsearch.main() line:92
+org.elasticsearch.bootstrap.Elasticsearch.main() line:85
+************************************************************
+[2020-04-01T11:57:18,685][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [354.1gb], net total_space [464.7gb], types [hfs]
+[2020-04-01T11:57:18,687][INFO ][o.e.e.NodeEnvironment    ] [UqRFBNr] heap size [1gb], compressed ordinary object pointers [true]
+[2020-04-01T11:57:18,691][INFO ][o.e.n.Node               ] node name [UqRFBNr] derived from node ID [UqRFBNrSTdqC-Uf7HPzxZQ]; set [node.name] to override
+[2020-04-01T11:57:18,692][INFO ][o.e.n.Node               ] version[6.1.2-SNAPSHOT], pid[15605], build[Unknown/Unknown], OS[Mac OS X/10.12.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/14/14+36-1461]
+[2020-04-01T11:57:18,692][INFO ][o.e.n.Node               ] JVM arguments [-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:61036,suspend=y,server=n, -Des.path.home=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home, -Des.path.conf=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config, -Xms1g, -Xmx1g, -Djava.security.policy=/Users/dealmoon/WorkSpace/MINE_GIT/elasticsearch/home/config/java.policy, -Dlog4j2.disable.jmx=true, -javaagent:/Users/dealmoon/Library/Caches/IntelliJIdea2018.1/groovyHotSwap/gragent.jar, -Dfile.encoding=UTF-8]
+[2020-04-01T11:57:18,693][WARN ][o.e.n.Node               ] version [6.1.2-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-04-01T11:57:28,143][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [aggs-matrix-stats]
+[2020-04-01T11:57:28,146][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [analysis-common]
+[2020-04-01T11:57:28,146][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [ingest-common]
+[2020-04-01T11:57:28,147][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-expression]
+[2020-04-01T11:57:28,147][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-mustache]
+[2020-04-01T11:57:28,147][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [lang-painless]
+[2020-04-01T11:57:28,147][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [mapper-extras]
+[2020-04-01T11:57:28,148][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [parent-join]
+[2020-04-01T11:57:28,148][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [percolator]
+[2020-04-01T11:57:28,148][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [reindex]
+[2020-04-01T11:57:28,151][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [repository-url]
+[2020-04-01T11:57:28,151][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [transport-netty4]
+[2020-04-01T11:57:28,152][INFO ][o.e.p.PluginsService     ] [UqRFBNr] loaded module [tribe]
+[2020-04-01T11:57:28,156][INFO ][o.e.p.PluginsService     ] [UqRFBNr] no plugins loaded
+[2020-04-01T11:57:28,677][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+[2020-04-01T11:57:32,726][INFO ][o.e.d.DiscoveryModule    ] [UqRFBNr] using discovery type [zen]
+[2020-04-01T11:57:33,762][INFO ][o.e.n.Node               ] initialized
+[2020-04-01T11:57:33,762][INFO ][o.e.n.Node               ] [UqRFBNr] starting ...
+[2020-04-01T11:57:34,089][INFO ][o.e.t.TransportService   ] [UqRFBNr] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2020-04-01T11:57:37,192][INFO ][o.e.c.s.MasterService    ] [UqRFBNr] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{Pz-jOFLHRvGI7Yizzhdk_Q}{127.0.0.1}{127.0.0.1:9300}
+[2020-04-01T11:57:37,202][INFO ][o.e.c.s.ClusterApplierService] [UqRFBNr] new_master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{Pz-jOFLHRvGI7Yizzhdk_Q}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {UqRFBNr}{UqRFBNrSTdqC-Uf7HPzxZQ}{Pz-jOFLHRvGI7Yizzhdk_Q}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2020-04-01T11:57:37,233][INFO ][o.e.h.n.Netty4HttpServerTransport] [UqRFBNr] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2020-04-01T11:57:37,233][INFO ][o.e.n.Node               ] [UqRFBNr] started
+[2020-04-01T11:57:37,265][INFO ][o.e.g.GatewayService     ] [UqRFBNr] recovered [0] indices into cluster_state

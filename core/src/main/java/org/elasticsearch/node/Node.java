@@ -19,6 +19,7 @@
 
 package org.elasticsearch.node;
 
+import log.MyLogger;
 import org.apache.logging.log4j.Logger;
 import org.apache.lucene.util.Constants;
 import org.apache.lucene.util.IOUtils;
@@ -252,7 +253,7 @@ public class Node implements Closeable {
             // use temp logger just to say we are starting. we can't use it later on because the node name might not be set
             Logger logger = Loggers.getLogger(Node.class, NODE_NAME_SETTING.get(environment.settings()));
             logger.info("initializing ...");
-
+            MyLogger.printTrack(this, logger, "Here is stack of Node instance");
         }
         try {
             Settings tmpSettings = Settings.builder().put(environment.settings())

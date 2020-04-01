@@ -56,6 +56,9 @@ if (project.javaVersion >= JavaVersion.VERSION_1_9 || Os.isFamily(Os.FAMILY_WIND
    * thing. We can't get the pid files in windows so we skip that as well.... */
   integTest.enabled = false
 } else {
+  /* add by cassey*/
+  return
+
   /* Set up tasks to unzip and run the old versions of ES before running the
    * integration tests. */
   for (String version : ['2', '1', '090']) {
